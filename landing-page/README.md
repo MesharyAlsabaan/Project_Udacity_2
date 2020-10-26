@@ -1,6 +1,6 @@
 # Landing Page Project
 
-Landing page is a project has some HTML and CSS styling to display a static version of the Landing Page project. I convert this project from a static project to an interactive one. And modified the HTML and CSS files, with java script.
+Landing page is a project that has some HTML and CSS styling to display a static version of the Landing Page project. I converted this project from a static project to an interactive one. And modified the HTML and CSS files, with java script.
 
 
 ## Main functions

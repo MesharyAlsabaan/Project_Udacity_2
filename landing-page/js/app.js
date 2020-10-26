@@ -1,3 +1,34 @@
+
+  var node=document.createElement("ul");
+  var sec1 = document.createElement("li");
+  var sec2= document.createElement("a");
+  var text=document.createTextNode("Section 1");
+  sec2.setAttribute("class","active");
+  sec2.setAttribute("id","Section_1");
+  sec2.setAttribute("href","#section1");
+  sec2.appendChild(text);
+  sec1.appendChild(sec2);
+  node.appendChild(sec1);
+
+  for(var i=2; i<5;i++){
+      console.log("hhh");
+var sec=document.createElement("li");
+var sec3= document.createElement("a");
+var text1=document.createTextNode(`Section ${i}`);
+sec3.setAttribute("id",`Section_${i}`);
+sec3.setAttribute("href",`#section${i}`);
+
+sec3.appendChild(text1);
+sec.appendChild(sec3);
+node.appendChild(sec);
+  }
+
+  document.getElementById("mm").appendChild(node);
+
+
+
+
+
 //Get the Ids from all sections
 const Section1 = document.getElementById('Section_1');
 const Section2 = document.getElementById('Section_2');
@@ -9,11 +40,22 @@ Section1.addEventListener('click', scroll1);
 Section2.addEventListener('click', scroll2);
 Section3.addEventListener('click', scroll3);
 Section4.addEventListener('click', scroll4);
-document.addEventListener('scroll', scrolling)
+document.addEventListener('scroll', scrolling);
 
 
 
-// when the user click this function scroll to the section area.
+
+
+
+  
+
+
+
+
+
+
+
+// // when the user click this function scroll to the section area.
 function scroll1() {
     document.getElementById("section1").scrollIntoView();
 
@@ -125,60 +167,6 @@ function activeNavigation(id) {
 
 
 
-/**
- *
- * Manipulating the DOM exercise.
- * Exercise programmatically builds navigation,
- * scrolls to anchors from navigation,
- * and highlights section in viewport upon scrolling.
- *
- * Dependencies: None
- *
- * JS Version: ES2015/ES6
- *
- * JS Standard: ESlint
- *
-*/
 
-/**
- * Define Global Variables
- *
-*/
-
-
-/**
- * End Global Variables
- * Start Helper Functions
- *
-*/
-
-
-
-/**
- * End Helper Functions
- * Begin Main Functions
- *
-*/
-
-// build the nav
-
-
-// Add class 'active' to section when near top of viewport
-
-
-// Scroll to anchor ID using scrollTO event
-
-
-/**
- * End Main Functions
- * Begin Events
- *
-*/
-
-// Build menu 
-
-// Scroll to section on link click
-
-// Set sections as active
 
 
